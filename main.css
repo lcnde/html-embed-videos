@@ -90,22 +90,24 @@ use display flex (so items are aligned side by side))*/
   width: 100%;
 }
 
-
+/*this move the placeholder a lil bit to the right*/
 .nav-input-form::placeholder {
   padding-left: 10px;
 }
 
-
+/*css of the search button near the input bar. pretty self explanatory*/
 .nav-input-search-button {
   background: #323232;
   border: none;
   padding: 9px 20px 9px 20px;
 }
 
+/*container of the microphone icon that aligns it to the center vertically
+justify-content aligns items horizontally
+align-items aligns items vertically*/
 .microphone-icon-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 0px 15px 0px 15px;
 }
 
@@ -118,24 +120,38 @@ use display flex (so items are aligned side by side))*/
   width: 15px;
 }
 
+/*container of the items in the top-right of the page*/
 .nav-right-items-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   padding: 0px 30px 0px 30px;
 }
 
-/*This is the class that adds padding between top-right items in the navbar*/
-.nav-right-item {
-  padding: 0px 30px 0px 30px;
+/*This is the class that adds padding between the top-right items in the navbar
+This class is applied to every item*/
+.nav-right-item-container-padding {
+  padding: 0px 15px 0px 15px;
 }
 
 #bell-icon {
   height: 20px;
 }
 
+/*This is the css that makes up the grid icon in the top-right*/
 .grid-icon {
   display: grid;
+  grid-template-columns: 4px 4px 4px;
+  grid-template-rows: 4px 4px 4px;
+  grid-gap: 2px;
+}
+
+.grid-item-container {
+
+}
+
+.grid-icon-element {
+  background: #999999;
 }
 
