@@ -10,6 +10,7 @@ body {
   background: #181818;
 }
 
+/*this is the class that contains all the navbar elements*/
 .navbar {
   background-color: #202020;
   position: sticky;
@@ -21,10 +22,12 @@ body {
   align-items: center;
 }
 
+/*This is the container of the hamburger element container*/
 .hamburger-icon-container {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 10px 0px 20px;
 }
 
+/*this is the parent-container of the grid items children of the hamburger icon*/
 .hamburger-icon {
   display: grid;
   background: #202020;
@@ -36,42 +39,103 @@ body {
   width: 18px;
 }
 
+/*This is the hamburger icon lines*/
 .hamburger-line {
   background: white;
   grid-column: 1 / 4; 
 }
 
+
+/*This is the container of the youtube logo*/
 .youtube-logo-container {
-
+  padding: 0px 20px 0px 10px;
 }
 
-.youtube-logo {
-  width: 130px;
+/*This si the actual youtube logo image id*/
+#youtube-logo {
+  width: 110px;
 }
 
+/*This is the whole search bar container that contains the input form, button and mic icon.
+It has a 100% width so it goes all the way from the youtube logo to the top-right items, but
+even if it is 100% width it doesn't affect the actual search bar input form, because it has 
+its own container that keeps it from extending longer than 650px.*/
 .search-bar-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.nav-input-form {
-  height: 26px;
+/*This is the search bar that contains the input form and the button.
+Its width directly affects the search bar input width.*/
+.search-bar {
+  max-width: 650px;
+  min-width: 300px;
+  width: 100%;
+}
+
+/*It keeps the input form bar and the button in a straight line (side by side)*/
+.search-bar-form {
+  display: flex;
+}
+
+/*the css of the input bar. Being 100% in width occupies all the space available in its parent
+container (minus the space occupied by the other elements since the parent container is set to
+use display flex (so items are aligned side by side))*/
+.nav-input-bar {
+  height: 30px;
   background: #121212;
   border: 1px solid;
   border-color: #323232;
+  width: 100%;
+}
+
+
+.nav-input-form::placeholder {
+  padding-left: 10px;
 }
 
 
 .nav-input-search-button {
   background: #323232;
   border: none;
-  margin-left: -4px;
-  padding: 7px;
+  padding: 9px 20px 9px 20px;
 }
 
-.search-logo {
-  position: relative;
-  margin-bottom: -3px;
+.microphone-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 15px 0px 15px;
+}
+
+#microphone-icon {
+  height: 20px;
+}
+
+#search-icon {
+  margin-bottom: -2px;
+  width: 15px;
+}
+
+.nav-right-items-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+}
+
+/*This is the class that adds padding between top-right items in the navbar*/
+.nav-right-item {
+  padding: 0px 30px 0px 30px;
+}
+
+#bell-icon {
+  height: 20px;
+}
+
+.grid-icon {
+  display: grid;
 }
 
