@@ -71,7 +71,7 @@ Its width directly affects the search bar input width.*/
 .search-bar {
   max-width: 650px;
   min-width: 300px;
-  width: 100%;
+  flex-basis: 75%; /*flex basis makes the bar shrink in proportion with the space available*/
 }
 
 /*It keeps the input form bar and the button in a straight line (side by side)*/
@@ -127,7 +127,7 @@ align-items aligns items vertically*/
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 20px 0px 20px;
 }
 
 /*This is the class that adds padding between the top-right items in the navbar
@@ -148,11 +148,23 @@ This class is applied to every item*/
   grid-gap: 2px;
 }
 
-.grid-item-container {
-
-}
-
+/*Colors of the little blocks in the grid icon in the top right*/
 .grid-icon-element {
   background: #999999;
+}
+
+/*css of the top-right round google profile image*/
+.google-profile-image {
+  content: "";
+  background: #1E887A;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans;
+  font-size: 20px;
 }
 
