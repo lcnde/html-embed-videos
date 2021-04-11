@@ -22,12 +22,10 @@ body {
 }
 
 .hamburger-icon-container {
-  justify-content: space-around;
   padding: 0px 20px 0px 20px;
 }
 
 .hamburger-icon {
-  position: relative;
   display: grid;
   background: #202020;
   grid-template-columns: 18px;
@@ -50,3 +48,30 @@ body {
 .youtube-logo {
   width: 130px;
 }
+
+.search-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-input-form {
+  height: 26px;
+  background: #121212;
+  border: 1px solid;
+  border-color: #323232;
+}
+
+
+.nav-input-search-button {
+  background: #323232;
+  border: none;
+  margin-left: -4px;
+  padding: 7px;
+}
+
+.search-logo {
+  position: relative;
+  margin-bottom: -3px;
+}
+
