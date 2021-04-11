@@ -88,12 +88,17 @@ use display flex (so items are aligned side by side))*/
   border: 1px solid;
   border-color: #323232;
   width: 100%;
+  padding-left: 10px; /*This adds padding for the placeholder*/
 }
 
-/*this move the placeholder a lil bit to the right*/
+/*this move the placeholder a lil bit to the right
+This line of code is no longer needed since adding padding directly to the 
+input bar acts on the placeholder text
 .nav-input-bar::placeholder {
   padding-left: 10px;
+  color: white;
 }
+*/
 
 /*css of the search button near the input bar. pretty self explanatory*/
 .nav-input-search-button {
