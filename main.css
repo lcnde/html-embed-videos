@@ -91,7 +91,7 @@ use display flex (so items are aligned side by side))*/
 }
 
 /*this move the placeholder a lil bit to the right*/
-.nav-input-form::placeholder {
+.nav-input-bar::placeholder {
   padding-left: 10px;
 }
 
