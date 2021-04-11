@@ -99,6 +99,7 @@ use display flex (so items are aligned side by side))*/
 .nav-input-search-button {
   background: #323232;
   border: none;
+  border-radius: 0px 2px 2px 0px;
   padding: 9px 20px 9px 20px;
 }
 
