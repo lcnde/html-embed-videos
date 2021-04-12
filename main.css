@@ -8,12 +8,13 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 body {
   background: #181818;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*this is the class that contains all the navbar elements*/
 .navbar {
   background-color: #202020;
-  position: sticky;
+  position: fixed;
   height: 56px;
   width: 100%;
   display: flex;
@@ -296,6 +297,12 @@ the comment section. The right one contains all the suggested videos.*/
 .likes-bar-tools-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  color: #909090;
+}
+
+.padding-between-tools {
+  padding: 0px 8px 0px 8px;
 }
 
 .likes-and-bar-container {
@@ -306,15 +313,39 @@ the comment section. The right one contains all the suggested videos.*/
 .likes-icons-container {
   display: flex;
   justify-content: space-around;
+  width: 135px;
 }
 
 .likes-bar-container {
   display: flex;
   align-items: flex-end;
+  width: 100%;
 }
 
 #likes-bar {
-  height: 5px;
-  width: 100px;
+  height: 3px;
+  width: 100%;
   background: #909090;
+}
+
+.like-icon-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0px 0px 18px 0px;
+}
+
+.tools-container {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.share-save-icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
 }
