@@ -14,7 +14,9 @@ body {
 /*this is the class that contains all the navbar elements*/
 .navbar {
   background-color: #202020;
-  position: fixed;
+  position: sticky;
+  z-index: 100; /*This handles the behavior of items that overlap. In this case it puts the element on top of others*/
+  top: 0; /*This makes the absolute position of the element on top 0*/
   height: 56px;
   width: 100%;
   display: flex;
@@ -323,7 +325,7 @@ the comment section. The right one contains all the suggested videos.*/
 }
 
 #likes-bar {
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: #909090;
 }
@@ -348,4 +350,72 @@ the comment section. The right one contains all the suggested videos.*/
   justify-content: space-around;
   align-items: center;
   gap: 6px;
+}
+
+.channel-and-video-desc-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  display: flex;
+  padding: 16px 0px 16px 0px;
+  gap: 16px;
+}
+
+#channel-photo{
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+.channel-name-and-desc-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 16px;
+  gap: 22px;
+}
+
+.channel-name-and-subs-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+}
+
+.channel-subscribers-container {
+  color: #A1A1A1;
+  font-size: 13px;
+}
+
+#channel-name {
+  font-weight: bold;
+}
+
+.video-desc-container {
+  font-size: 14px;
+}
+
+.show-more-button-container {
+  color: #8EAAAA;
+  font-size: 14px;
+}
+
+.subscribe-button-container {
+  height: 50px;
+  min-width: 114px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subscribe-button {
+  height: 36px;
+  width: 106px;
+  background: #CC1100;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: 800;
 }
