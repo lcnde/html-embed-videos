@@ -208,7 +208,7 @@ of the suggested videos column.*/
   color: #CFCFCF;
   width: 100%;
   height: 100%;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .suggested-video-element-container {
@@ -238,25 +238,83 @@ to stay in separate divs*/
   align-items: flex-start;
   max-width: 232px;
   max-height: 92px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0px 0px 0px 7px;
 }
 
 /*Contains the name of the video*/
 .suggested-video-name {
   color: white;
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 800px;
+  font-size: 13px;
 }
 
 /*Contains the video author name, views and how long ago the video was published*/
 .suggested-video-details-container {
   color: #AAAAAA;
   font-size: 11px;
+  font-weight: 400px;
+  padding: 10px 0px 0px 0px;
 }
 
 /*This padding applies to the 2 main flex columns, the left one contains the video player and
 the comment section. The right one contains all the suggested videos.*/
 .main-columns-padding {
   padding: 0px 11px 0px 11px;
+}
+
+.suggested-video-artist-name {
+  padding: 0px 0px 7px 0px;
+}
+
+.video-info-and-likes-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+  max-height: 90px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-title-and-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 5px 0px 5px 0px;
+}
+
+.video-title-container {
+  font-size: 20px;
+}
+
+.video-info-container {
+  color: #A8A8A8;
+  font-size: 15px;
+}
+
+.likes-bar-tools-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes-and-bar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.likes-icons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.likes-bar-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+#likes-bar {
+  height: 5px;
+  width: 100px;
+  background: #909090;
 }
