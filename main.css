@@ -194,8 +194,11 @@ This class is applied to every item*/
   flex-direction: column;
 }
 
+/*The container that has inside of it the replay chat button. It is placed on top
+of the suggested videos column.*/
 #chat-replay-button-container {
   height: 30px;
+  padding: 0px 0px 19px 0px;
 }
 
 #chat-replay-button {
@@ -213,6 +216,7 @@ This class is applied to every item*/
   justify-content: flex-start;
   min-height: 92px;
   width: 100%;
+  padding: 3px 0px 3px 0px;
 }
 
 .suggested-video-thumbnail-container {
@@ -225,7 +229,8 @@ This class is applied to every item*/
   width: 100%;
 }
 
-/*keeps the video info separately and displays them in column. The video name and view have
+/*keeps the video info separately from the video name
+and displays the videos in column. The video name and view have
 to stay in separate divs*/
 .suggested-video-info-container {
   display: flex;
@@ -234,6 +239,7 @@ to stay in separate divs*/
   max-width: 232px;
   max-height: 92px;
   font-family: sans-serif;
+  padding: 0px 0px 0px 7px;
 }
 
 /*Contains the name of the video*/
