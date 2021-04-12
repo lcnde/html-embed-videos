@@ -176,7 +176,9 @@ This class is applied to every item*/
 
 .main-container { 
   height: 100%;
-  padding: 22px; 
+  padding: 22px 0px 0px 0px; 
+  display: flex;
+  justify-content: center;
 }
 
 .video-player {
@@ -184,9 +186,71 @@ This class is applied to every item*/
   height: 100%;
 }
 
-.video-player-container {
-  width: 1280px;
-  height: 720px;
+
+.suggested-videos-container {
+  min-width: 400px; /*30px height delete later*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+#chat-replay-button-container {
+  height: 30px;
+}
 
+#chat-replay-button {
+  background: #181818;
+  border: solid 1px;
+  border-color: #303030;
+  color: #CFCFCF;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+}
+
+.suggested-video-element-container {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 92px;
+  width: 100%;
+}
+
+.suggested-video-thumbnail-container {
+  min-width: 165px;
+  max-width: 165px;
+  height: 100%;
+}
+
+.suggested-video-thumbnail {
+  width: 100%;
+}
+
+/*keeps the video info separately and displays them in column. The video name and view have
+to stay in separate divs*/
+.suggested-video-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 232px;
+  max-height: 92px;
+  font-family: sans-serif;
+}
+
+/*Contains the name of the video*/
+.suggested-video-name {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/*Contains the video author name, views and how long ago the video was published*/
+.suggested-video-details-container {
+  color: #AAAAAA;
+  font-size: 11px;
+}
+
+/*This padding applies to the 2 main flex columns, the left one contains the video player and
+the comment section. The right one contains all the suggested videos.*/
+.main-columns-padding {
+  padding: 0px 11px 0px 11px;
+}

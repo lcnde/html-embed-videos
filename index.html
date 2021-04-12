@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css" type="text/css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css" type="text/css">
+</head>
 
-  <body>
-    <nav class="navbar">
-      <div class="hamburger-icon-container">
-        <div class="hamburger-icon">
-          <div class="hamburger-line hamburger-line"></div>
-          <div class="hamburger-line hamburger-line"></div>
-          <div class="hamburger-line hamburger-line"></div>
+<body>
+  <nav class="navbar">
+    <div class="hamburger-icon-container">
+      <div class="hamburger-icon">
+        <div class="hamburger-line hamburger-line"></div>
+        <div class="hamburger-line hamburger-line"></div>
+        <div class="hamburger-line hamburger-line"></div>
+      </div>
+    </div>
+    <div class="youtube-logo-container">
+      <img id="youtube-logo" src="https://download.logo.wine/logo/YouTube/YouTube-White-Logo.wine.png"
+        alt="Youtube logo dark mode">
+    </div>
+    <div class="search-bar-container">
+      <div class="search-bar">
+        <form class="search-bar-form">
+          <input class="nav-input-bar" type="text" placeholder="Search">
+          <button class="nav-input-search-button" type="submit"><img id="search-icon" src="assets/search.svg"
+              alt="search logo"></button>
+        </form>
+      </div>
+      <div class="microphone-icon-container">
+        <img id="microphone-icon" src="assets/mic.svg" alt="Microphone icon">
+      </div>
+    </div>
+    <div class="nav-right-items-container">
+      <div class="nav-right-item-container-padding">
+        <img id="video-icon" src="assets/video.svg" alt="Video icon">
+      </div>
+      <div class="nav-right-item-container-padding">
+        <div class="grid-icon">
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
+          <div class="grid-icon-element"></div>
         </div>
       </div>
-      <div class="youtube-logo-container">
-        <img id="youtube-logo" src="https://download.logo.wine/logo/YouTube/YouTube-White-Logo.wine.png" alt="Youtube logo dark mode">
+      <div class="nav-right-item-container-padding">
+        <img id="bell-icon" src="assets/bell.svg" alt="Bell icon">
       </div>
-      <div class="search-bar-container">
-        <div class="search-bar">
-          <form class="search-bar-form">
-            <input class="nav-input-bar" type="text" placeholder="Search">
-            <button class="nav-input-search-button" type="submit"><img  id="search-icon" src="assets/search.svg" alt="search logo"></button>
-          </form>
-        </div>
-        <div class="microphone-icon-container">
-          <img id="microphone-icon" src="assets/mic.svg" alt="Microphone icon">
-        </div>
+      <div class="nav-right-item-container-padding">
+        <div class="google-profile-image">L</div>
       </div>
-      <div class="nav-right-items-container">
-        <div class="nav-right-item-container-padding">
-          <img id="video-icon" src="assets/video.svg" alt="Video icon">
-        </div>
-        <div class="nav-right-item-container-padding">
-          <div class="grid-icon">
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
-            <div class="grid-icon-element"></div>
+    </div>
+  </nav>
+  <main class="main-container">
+    <div class="video-and-comments-container main-columns-padding">
+      <div class="video-player-container">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/MOIUa_dhy-g" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="suggested-videos-container main-columns-padding">
+      <div id="chat-replay-button-container">
+        <button id="chat-replay-button" type="button">SHOW THE CHAT REPLAY</button>
+      </div>
+      <div class="suggested-video-element-container">
+        <figure class="suggested-video-thumbnail-container">
+          <img class="suggested-video-thumbnail"
+            src="https://api.time.com/wp-content/uploads/2021/03/CMBYN_FINAL_Still006.jpeg" alt="lil nas twerking">
+        </figure>
+        <div class="suggested-video-info-container">
+          <div class="suggested-video-name">
+            <h2>bbno$ - moves prod. lentra</h2>
+          </div>
+          <div class="suggested-video-details-container">
+            <div class="suggested-video-artist-name">
+              <p>bbno$</p>
+            </div>
+            <div class="suggested-video-views">
+              <p>42M views · 1 year ago </p>
+            </div>
           </div>
         </div>
-        <div class="nav-right-item-container-padding">
-          <img id="bell-icon" src="assets/bell.svg" alt="Bell icon">
-        </div>
-        <div class="nav-right-item-container-padding">
-          <div class="google-profile-image">L</div>
-        </div>
       </div>
-    </nav>
-    <main class="main-container">
-      <div class="video-and-comments-container">
-        <div class="video-player-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/MOIUa_dhy-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
-      </div>
-      <div class="suggested-videos">
-
-      </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
 
 </html>
