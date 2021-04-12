@@ -398,7 +398,7 @@ the comment section. The right one contains all the suggested videos.*/
 }
 
 .show-more-button-container {
-  color: #8EAAAA;
+  color: #898989;
   font-size: 14px;
 }
 
@@ -418,4 +418,63 @@ the comment section. The right one contains all the suggested videos.*/
   border: none;
   border-radius: 2px;
   font-weight: 800;
+}
+
+.comments-form-and-number-parent-container {
+  height: 135px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.comments-form-and-numbers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.comments-number-container{
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+  font-size: 19px;
+}
+
+.comments-number {
+  color: white;
+}
+
+.comments-sort-by-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #898989;
+}
+
+.grid-sort-by-icon {
+  display: grid;
+  grid-template-columns: 6px 6px 6px;
+  grid-template-rows: 2px 2px 2px; 
+  row-gap: 3px;
+}
+
+.grid-sort-by-element-1{
+  background: #898989;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.grid-sort-by-element-2{
+  background: #898989;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.grid-sort-by-element-3{
+  background: #898989;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
 }
